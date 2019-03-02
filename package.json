@@ -2,8 +2,12 @@
   "name": "european-rests",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
     "react": "^16.8.3",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
   },
@@ -21,5 +25,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2"
+  }
 }
