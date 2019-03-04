@@ -5,9 +5,7 @@ import { Navbar, Badge, FormControl } from 'react-bootstrap';
 
 class RestListComponent extends Component {
     state = {
-        currentIndex: 0,
         itemsToDisplay: [],
-        itemsPerPage: 50,
         itemsToUse: [],
         cuisines: []
     }
@@ -135,7 +133,7 @@ class RestListComponent extends Component {
     reRenderList() {
         var cuisines = [];
         var itemsToDisplay = [];
-        for(var i = (this.state.currentIndex*this.state.itemsPerPage); i < (this.state.currentIndex*this.state.itemsPerPage) + this.state.itemsPerPage; i++) {
+        for(var i = 0; i < eurorests.length; i++) {
             itemsToDisplay.push(eurorests[i]);
             eurorests[i]["Cuisine Style"].substring(1, eurorests[i]["Cuisine Style"].length - 2).split(',').forEach(cuisine => {
                 let c = cuisine.substring(1, cuisine.length - 1);
